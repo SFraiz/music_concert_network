@@ -6,9 +6,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   </head>
 
+  <header><h1>Music Concerts</h1></header>
+
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>  
+    </div>
   </body>
+
+  <footer>© 2016 Music Concert Network.</footer>
 </html>

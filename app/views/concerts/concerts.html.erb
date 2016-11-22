@@ -1,0 +1,12 @@
+<h1>Concerts</h1>
+<ul>
+<% @concerts.each do |concert| %>
+	<li>
+		<% if concert.artist.present? %>
+		Artist: <%= concert.artist %>
+		<% end %>
+		<%= link_to 'details', concert_path(concert.id), class: 'view-details' %> 
+	</li>
+<% end %>
+</ul>
+<%= link_to 'add new concert', new_concert_path, class: 'submit-concert' %> 

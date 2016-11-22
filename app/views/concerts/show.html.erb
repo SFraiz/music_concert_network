@@ -1,0 +1,21 @@
+<h1><%= @concert.artist %></h1>
+<h2>Details:</h2>
+<% if @concert.venue.present? %>
+Venue: <%= @concert.venue %>
+<% end %>
+<br>
+<% if @concert.city.present? %>
+City: <%= @concert.city %>
+<% end %>
+<br>
+<% if @concert.date.present? %>
+Date: <%= @concert.date %>
+<% end %>
+<br>
+<% if @concert.price.present? %>
+Price: <%= @concert.price %> $
+<% end %>
+<br>
+<% if @concert.description.present? %>
+Description: <%= @concert.description %>
+<% end %>
